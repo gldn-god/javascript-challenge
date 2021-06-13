@@ -37,7 +37,7 @@ button.on("click", function() {
     var inputValue = inputElement.property("value");
     console.log(inputValue);
 
-    // filter data where date input = row value, output to web console
+    // filter data where date input = row key, output to web console
     var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
     console.log(filteredData);
 
