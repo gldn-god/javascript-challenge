@@ -35,10 +35,17 @@ button.on("click", function() {
     // retrieve date input, output to web console
     var inputElement = d3.select("#datetime");
     var inputValue = inputElement.property("value");
-    console.log(inputValue);
+    //console.log(inputValue);
 
     // filter data where date input = row key, output to web console
-    var filteredData = tableData.filter(sighting => sighting.datetime === inputValue);
+    var filteredData = tableData.filter(
+      sighting => sighting.datetime === inputValue ||
+      sighting.shape === inputValue ||
+      sighting.city === inputValue ||
+      sighting.state === inputValue ||
+      sighting.country === inputValue
+      );
+
     console.log(filteredData);
 
     // write data to web console
