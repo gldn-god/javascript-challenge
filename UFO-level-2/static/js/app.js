@@ -32,7 +32,7 @@ button.on("click", function() {
     tbody.html("");
 
     // retrieve date input, output to web console
-    var inputElement = d3.select("#datetime");
+    var inputElement = d3.select("#input");
     var inputValue = inputElement.property("value");
     //console.log(inputValue);
 
