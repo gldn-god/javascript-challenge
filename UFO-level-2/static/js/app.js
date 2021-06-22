@@ -5,7 +5,6 @@ console.log(tableData);
 // reference table body
 var tbody = d3.select("tbody");
 
-
 // sightings table
 tableData.forEach(function(ufoSighting) {
     
@@ -45,7 +44,6 @@ button.on("click", function() {
       sighting.state === inputValue ||
       sighting.country === inputValue
       );
-
     console.log(filteredData);
 
     // write data to web console
